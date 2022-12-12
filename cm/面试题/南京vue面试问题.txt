@@ -1,0 +1,17 @@
+脚手架版本  
+清除浮动的方法  
+get 和post的区别   
+五大基本数据类型  
+判断一个数组   
+localstorge 和sessionstorge的区别 (cookie)
+页面加载完了之后在哪里操作数据
+说一下mounted这个钩子函数
+组件之间的传参 
+了解过E-charts吗
+
+Vuex  
+v-if  v-show
+nexttrick
+keepalive  和 结合那两个钩子
+原型链 
+双向绑定原理
