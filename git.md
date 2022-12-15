@@ -71,12 +71,16 @@ HEAD^   # 上一个版本
 HEAD~100    # 上一百个版本
 
 git reset --hard HEAD^    #回退到上一个版本
+git reset --mixed HEAD^   #默认回退--mixed可不写
+git reset --soft HEAD^/HEAD~1   #  撤销commit
+git reset -- HEAD^/HEAD~1   #  撤销commit
+
+git reset --soft HEAD^1   # 撤回最近一次远程提交
 
 cat 文件名    #查看文件内容
 
 # 如果想回到未来的版本
 git reset --hard 要回到的那个版本的版本号    # 版本号不必写全能查到就行
-
 
 # 查看命令历史
 git reflog
@@ -90,6 +94,7 @@ git reflog
 
 git add    #将文件提交到暂存区
 git commit  # 提交到版本库
+git commit --amend  # 修改已commit的注释信息实现
 
 
 # 所有任何修改必须经过暂存区才能被提交到仓库中
@@ -166,6 +171,7 @@ git branch -d 分支名称 # 删除本地分支
 git push origin --delete 分支名称 # 删除远程分支
 # 合并分支
 git merge 分支名称     # 合并某分支到当前分支
+git merge --abort   # 取消合并
 # 切换分支
 git checkout 分支名称 # 切换到指定分支
 git checkout -b 分支名称 # 创建并切换到指定分支
@@ -174,7 +180,12 @@ git switch -c 分支名称     # 新语法创建并切换分支
 git switch 分支名称 # 新语法切换到指定分支
 # 代码推送
 git push --set-upstream origin 分支名 # 将本地分支推送到远程仓库
+git pull   # 获取远程最新修改
+git rebase master # 合并主干的修改
+git checkout .   #  撤回未提交的所有数据
 ```
 
+```bash
 
+```
 
