@@ -1,4 +1,4 @@
-<div align='center'><font size='70'; face="宋体">Javascript</font></div>
+<div align='center'><font size='70'; face="宋体">JavaScript</font></div>
 
 ## 变量
 

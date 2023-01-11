@@ -1,7 +1,5 @@
 <div align='center'><font size='70'; face="宋体">ECMAScript-<span style="color: skyblue;">(2015-2021)</span></font></div>
 
-<font color="red">学习完后将es6新增内容归类给js中相应的模块</font>
-
 - let变量
 - const常量
 - 解构赋值
@@ -449,14 +447,6 @@ getJSON("/post/1.json").then(
 
 
 函数组合
-
-
-
-
-
-
-
-
 
 
 

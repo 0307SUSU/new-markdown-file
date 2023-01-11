@@ -26,7 +26,27 @@ cls命令   #清空终端内容
 
 # <font color="#006d0e">模块化（Natives modules）</font>
 
+### commonJS规范
+
+> `exports` 输出
+>
+> `require` 输入
+>
+> `module` 
+>
+> `__filename` 当前模块绝对路径
+>
+> `__dirname` 当前文件所在目录路径
+
 ### 内置模块
+
+Node中的全局对象`global` (标准名称叫做`globalThis`)
+
+`process` 全局对象
+
+> 属性和方法
+>
+> 
 
 #### fs文件处理模块
 
