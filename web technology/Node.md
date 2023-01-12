@@ -26,23 +26,41 @@ cls命令   #清空终端内容
 
 # <font color="#006d0e">模块化（Natives modules）</font>
 
-### commonJS规范
+<font color="skyblue">使用模块化无非需要注意两件事导出和引入</font>
 
-> `exports` 输出
+### commonJS规范 `Node.js中默认使用的模块化标准`
+
+> `exports` 输出 ，module中的属性（也可以单独作为变量使用，用来指定模块的输出内容）
 >
-> `require` 输入
+> `require` 输入 （获取指定模块暴露的内容，不可用于加载ES6模块，ES6模块有单独的引入方法“import()”）
 >
-> `module` 
+> `module` 是一个全局对象，存储了当前模块基本信息
 >
 > `__filename` 当前模块绝对路径
 >
 > `__dirname` 当前文件所在目录路径
 
+commonJS模块最外层会被一个函数包裹，上边的五个属性会作为该函数的参数传入，所以每个模块都可以直接使用这些参数
+
+```js
+(function(exports, require, module, __filename, __dirname) {
+// 模块代码会被放到这里
+});
+```
+
+### ES module 规范  `ES的内置模块化标准`
+
+> export  导出
+>
+> import 引入
+
+
+
 ### 内置模块
 
 Node中的全局对象`global` (标准名称叫做`globalThis`)
 
-`process` 全局对象
+`process` 操作当前的node进程
 
 > 属性和方法
 >
@@ -55,8 +73,6 @@ Node中的全局对象`global` (标准名称叫做`globalThis`)
 #### http服务器模块
 
 ### 自定义模块
-
-#### 模块化规范CommonJS规范
 
 ### 第三方模块
 
