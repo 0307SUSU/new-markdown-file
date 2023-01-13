@@ -64,7 +64,9 @@ Node中的全局对象`global` (标准名称叫做`globalThis`)
 
 > 属性和方法
 >
-> 
+> process.exit()   结束进程
+>
+> process.nextTick()  tick任务队列中添加任务
 
 #### fs文件处理模块
 
