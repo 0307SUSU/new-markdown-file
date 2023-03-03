@@ -7,11 +7,10 @@
 安装完成后需要设置一下账户，因为git是分布式版本控制系统
 
 ```bash
+git config user.name "用户名"
+git config user.email "邮箱地址"
 git config --global user.name "用户名"
-git config --global user.email "账号"
-
-# 这个要背下来     固定语法
-# git config    命令     config（配置）
+git config --global user.email "邮箱地址"
 # --global    参数     表示这台计算机上所有的git仓库都会使用这个配置
 ```
 

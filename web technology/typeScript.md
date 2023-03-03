@@ -82,12 +82,29 @@
 
 # <font size='5' face='宋体' color='#ff6700'>数据类型</font>
 
-声明
+变量的声明
 
 ```ts
-var a: number;
-let b: String;
-const c: boolean;
+var a: number = 1;
+let b: String = '字符串';
+const c: boolean = true;
+let arr: number[] = [1,2,34,5,6,7,8];
+let arr2:string[] = ['one','two','there'];
+let Array<number> = [1,2,4,5,6,7,8];
+let arr3:[number,string];
+arr3 = [12,'字符串']；
+let n: null = null;
+let u: undefined = undefined;
+any  任意数据类型
+void  没有任何类型
+never
+组合类型   一个变量可以赋予多种类型
+enum flag{
+    name = "sw",
+    age = "30",
+    sex = "man",
+};
+let one:flag = flag.sex;
 
 function sum (d: number, e:number){
     return d+e;

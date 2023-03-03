@@ -14,69 +14,110 @@ Flexble Box（弹性布局），
 
 指定为flex布局后，子元素的`float`、`clear`和`vertical-align`属性会失效。
 
-容器属性
+### 容器属性
 
 -   flex-direction控制容器的主轴方向
 -   flex-wrap控制项目的换行方式
 -   flex-flow   上边两个的组合
--   justify-content控制主轴的的对齐方式
--   align-items项目在交叉轴的对齐方式
+-   justify-content控制主轴元素的对齐方式
+-   align-items交叉轴元素的对齐方式
 -   align-content控制多轴的排列顺序
 
-项目属性
-
--   flex-grow   放大元素
--   flex-shrink  缩小
--   flex-basis   设置子元素原始所占主轴空间大小
--   align-self    自定义某个项目的对齐方式，覆盖flex-items
--   flex   是`flex-grow`, `flex-shrink` 和 `flex-basis`的简写，默认值为`0 1 auto`。
--   order    排序
-
-### 容器的属性
-
 #### flex-direction
+
+> row 默认值  从左向右水平排列
+>
+> row-reverse   从又向左水平排列
+>
+> column    自上而下排列
+>
+> column-reverse    自下而上排列
 
 决定主轴的方向(即项目的排列方向)。
 
 ```css
 .box{
-    flex-direction:row(默认值)水平向右排列|row-reverse(水平向左排列)|column(自上而下排列)|column-reverse(自下而上排列)
+    flex-direction:row|row-reverse|column|column-reverse;
 }
 ```
 
 #### flex-wrap
 
+> nowrap   默认值   不换行
+>
+> wrap    换行
+>
+> wrap-reverses   自下而上换行，（第一行在最底部）
+
 ```css
 .box{
-    flex-wrap:nowrap(默认不换行)|wrap(换行，第一行在上方)|wrap-reverse(换行，第一行在下方);
+    flex-wrap:nowrap|wrap|wrap-reverse;
 }
 ```
 
 #### flex-flow
 
+> 上面两个元素的简写形式
+
 ```css
 .box{
-    flex-flow:<flex-direction>||<flex-wrap>;
+    flex-flow:<flex-direction> <flex-wrap>;
 }
 ```
 
 #### justify-content
 
+> flex-start    默认值   元素靠左排列
+>
+> flex-end    元素靠右排列
+>
+> center        居中排列
+>
+> space-between     盒子两边对齐
+>
+> space-around       分散对齐
+>
+> space-evenly         平均对齐
+
 ```css
 .box{
-    justify-content:flex-start(默认值，左对齐) | flex-end(右对齐) | center(居中) | space-between(两端对齐，项目之间的间隔都相等。) | space-around(每个项目两侧的间隔相等，所以，项目之间的间隔比项目与边框的间隔大一倍。)
+    justify-content:flex-start|flex-end|center|space-between| space-around|space-evenly
 }
 ```
 
 #### align-items
 
+> flex-start     顶部起点对齐
+>
+> flex-end     底部起点对齐
+>
+> center       中间起点对其
+>
+> baseline     基线对齐
+>
+> stretch       默认     元素撑满整个容器高度
+
 ```css
 .box{
-    align-items:flex-start(交叉轴的起点对齐) | flex-end(交叉轴的终点对齐) | center(交叉轴的中点对齐) | baseline(项目的第一行文字的基线对齐) | stretch(默认值，如果项目未设置高度或设为auto，将占满整个容器的高度);
+    align-items:flex-start| flex-end | center | baseline | stretch;
 }
 ```
 
 #### align-content
+
+> 交叉轴元素对齐方式，和justify-content一样，只不过是控制垂直方向
+
+> flex-start
+>
+> flex-end
+>
+> center
+>
+> space-between
+>
+> space-around
+>
+> strentch
 
 ```css
 .box{
@@ -84,7 +125,14 @@ Flexble Box（弹性布局），
 }
 ```
 
-### 项目的属性
+### 项目属性
+
+- flex-grow   放大
+- flex-shrink  缩小
+- flex-basis   设置子元素原始所占主轴空间大小
+- align-self    自定义某个项目的对齐方式，覆盖flex-items
+- flex   是`flex-grow`, `flex-shrink` 和 `flex-basis`的简写，默认值为`0 1 auto`。
+- order    排序
 
 #### order
 
