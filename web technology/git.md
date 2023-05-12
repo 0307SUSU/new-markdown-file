@@ -59,7 +59,7 @@ HEAD    # 表示当前版本
 HEAD^   # 上一个版本
 HEAD~100    # 上一百个版本
 reset  # 重置命令 
-git reset --mixed HEAD^ #默认回退--mixed可不写,将暂存区内容回退到工作区
+git reset --mixed HEAD #默认回退--mixed可不写,将暂存区内容回退到工作区
 git reset --soft HEAD^/HEAD~1   #  撤销已经commit的修改到暂存区
 git reset --hard HEAD^/要回滚的commit id  #回退到上一个版本或指定版本
 git reflog  # 查看详细操作历史
