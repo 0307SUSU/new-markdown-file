@@ -86,7 +86,17 @@ git pull   # 获取所有远程分支的最新修改
 git remote -v  # 查看远程库信息
 git remote rm 文件名  # 删除远程库
 # 删除相当于解除本地仓库与远程仓库的联系，远程库本身没有改变
+git stash # 存放未提交的更改（你在当前分支上改动的却没有提交commit的内容）
+git stash apply #恢复存放的更改 （恢复但并不删除存放内容）
+git stash drop # 删除存放内容
+git stash pop #恢复的同时把 stash 存储列表的内容也删了
+git stash list #查看存放列表
+# 注意： 如果有一个分支上多个 stash，如果需要恢复指定的 stash ，可以在命令尾部加id，如 $ git stash apply stash@{0}，同样删除指定 stash 项目则执行如 $ git stash drop stash@{1} 。
 ```
+
+
+
+
 
 ```bash
 git branch # 查看当前分支
