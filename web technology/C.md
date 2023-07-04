@@ -123,6 +123,10 @@ scanf("爱情只是开始，生活才是长久");
 
 > `auto`、`break`、`case`、`char`、`const`、`continue`、`default`、`do`、`double` 、`else`、`enum`、`extern`、`float`、`for`、`goto`、`if`、`int`、`long`、`register`、`return`、`short`、`signed`、`sizeof`、`static`、`struct`、`switch`、`typedef`、`unsigned`、`union`、`void`、`volatile`、`while`
 
+### #define
+
+
+
 ### 数据类型
 
 #### 基本数据类型
@@ -205,6 +209,10 @@ while(){
 ### 函数
 
 ### 数组
+
+### 指针
+
+### 结构体（对象）
 
 
 
