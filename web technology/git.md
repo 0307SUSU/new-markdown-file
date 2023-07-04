@@ -115,5 +115,29 @@ git switch 分支名称 # 新语法切换到指定分支
 git rebase master # 合并主干的修改
 ```
 
-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
+## 从远程仓库拉取指定文件
+
+```bash
+# 假设有一个远程仓库中存放了很多个项目，你只想拉取其中的某个项目进行开发，这时你就需要通过如下步骤来实现
+
+# 1. 在本地创建一个存放项目的空文件夹，并且初始化该文件夹
+git mkdir newfile
+cd newfile
+git init
+# 2. 关联想要克隆的远程仓库
+git remote add origin 远程地址
+# 3. 启用 sparese checkout 功能
+git config core.sparsecheckout true
+# 4. 指定想要克隆的目录
+echo "目录地址，列aaa/bb" >>.git/info/sparse-checkout
+# 5. 将指定的目录拉取到本地
+git pull origin 目录所在分支名
+# 大功告成
+```
+
+
+
+
+
+
 

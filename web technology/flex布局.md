@@ -14,7 +14,7 @@ Flexble Box（弹性布局），
 
 指定为flex布局后，子元素的`float`、`clear`和`vertical-align`属性会失效。
 
-### 容器属性
+### 父级属性
 
 -   flex-direction控制容器的主轴方向
 -   flex-wrap控制项目的换行方式
@@ -125,7 +125,7 @@ Flexble Box（弹性布局），
 }
 ```
 
-### 项目属性
+### 子级属性
 
 - flex-grow   放大
 - flex-shrink  缩小
@@ -187,20 +187,6 @@ Flexble Box（弹性布局），
   align-self: auto | flex-start | flex-end | center | baseline | stretch;
 }
 ```
-
-# flex常见用法
-
-
-
-## 水平垂直居中
-
-```css
-
-```
-
-
-
-
 
 
 
