@@ -166,15 +166,19 @@ scanf("爱情只是开始，生活才是长久");
 #### 选择语句
 
 > if
->
-> switch
 
 ```c
 if(1){
-    printf("我是1")
+    printf("我是if")
 }else {
-    printf("我不是1")
+    printf("我不是else")
 }
+
+```
+
+> switch
+
+```c
 
 ```
 
