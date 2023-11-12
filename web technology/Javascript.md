@@ -730,8 +730,6 @@ let fuck = Symbol("bitch");
 
 ### Promise
 
-作用：
-
 > 1. 新的异步编程的解决方案,解决回调地狱问题
 
 用法：
