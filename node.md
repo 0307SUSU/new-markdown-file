@@ -176,7 +176,20 @@ promise的实例方法最终都会return一个新的promise
 - 内存机制
 - 任务队列
 
-### commonjs规范
+### 模块化
+
+> 模块化是一种规范，它将一些单独的功能从程序中抽离出来，放入一个独立的文件中形成模块（相当于**一个文件就是一个模块**），模块之间相互独立，通过特定的语法**导入和导出**模块使模块之间建立联系。
+
+为什么要实现模块化？
+
+> 提高代码可复用性，提升开发效率，减少重复代码，方便后期维护
+
+> 前端常用的模块化规范
+
+- commonjs规范、
+- ES规范、
+
+#### commonjs规范
 
 [CommonJS](https://blog.csdn.net/xun__xing/article/details/108041714?ops_request_misc=&request_id=&biz_id=102&utm_term=commonjs&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-108041714.nonecase&spm=1018.2226.3001.4187)
 
@@ -184,7 +197,17 @@ promise的实例方法最终都会return一个新的promise
 
 > commonjs是node默认的模块化规范
 
-#### 模块化
+##### 如何导入模块
+
+##### 如何导出模块
+
+#### ES规范
+
+> ES规范是ECMAScript2015定义的js规范
+
+##### 如何导入模块
+
+##### 如何导出模块
 
 ### Global
 
@@ -196,23 +219,9 @@ promise的实例方法最终都会return一个新的promise
 
 [参考链接](https://javascript.ruanyifeng.com/nodejs/packagejson.html)
 
-### 上传模块到npm
-
-[参考链接](https://juejin.cn/post/6864776736812236808)
-
-### 模块导入和导出
-
-> 导入require()
->
-> 导出exports、module.exports(一般用这个)
-
-### npm
-
-[npm命令大全](https://bbs.huaweicloud.com/blogs/343692)
-
 ### 内置模块
 
-> fs文件系统模块
+#### fs文件系统模块
 
 [api文档](https://nodejs.org/docs/v0.4.0/api/fs.html)
 
@@ -222,21 +231,27 @@ promise的实例方法最终都会return一个新的promise
 
 [阿里云教程](https://developer.aliyun.com/article/1203017)
 
-> path路径模块
+#### path路径模块
 
 [csdn教程](https://blog.csdn.net/u014711690/article/details/111639640)
 
-> http模块
+#### http模块
 
-
-
-> url模块
+#### url模块
 
 [腾讯云教程](https://cloud.tencent.com/developer/article/1653911)
 
-> os操作系统模块
+#### os操作系统模块
 
 [阮一峰](https://javascript.ruanyifeng.com/nodejs/os.html)
+
+### 上传模块到npm
+
+[参考链接](https://juejin.cn/post/6864776736812236808)
+
+### npm
+
+[npm命令大全](https://bbs.huaweicloud.com/blogs/343692)
 
 ### 三方模块
 
