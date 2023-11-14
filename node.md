@@ -58,7 +58,7 @@ new Promise(function(resolve,reject){
 })
 ```
 
-> 读取Promise中的数据
+###### 读取Promise中的数据
 
 要想读取Promise中的数据，需要调用promise的实例方法`.then()`
 
@@ -168,13 +168,23 @@ promise的实例方法最终都会return一个新的promise
 
   如果PromiseState的状态为rejected，这时then方法会执行第二个callback返回数据
 
+### js宏任务和微任务
 
+> 前置知识
+
+- js的运行机制
+- 内存机制
+- 任务队列
 
 ### commonjs规范
 
 [CommonJS](https://blog.csdn.net/xun__xing/article/details/108041714?ops_request_misc=&request_id=&biz_id=102&utm_term=commonjs&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-2-108041714.nonecase&spm=1018.2226.3001.4187)
 
 [【前端模块化】-关于CommonJS规范](https://blog.csdn.net/weixin_53478983/article/details/128230038?ops_request_misc=&request_id=&biz_id=102&utm_term=commonjs&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-128230038.nonecase&spm=1018.2226.3001.4187)
+
+> commonjs是node默认的模块化规范
+
+#### 模块化
 
 ### Global
 
