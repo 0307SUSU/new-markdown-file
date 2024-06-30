@@ -1,3 +1,5 @@
+
+
 # git
 
 ## 安装
@@ -46,6 +48,8 @@ git add --all（-A） # 提交当前目录下所有改动文件到暂存区（�
 git add .  # 提交当前目录下所有改动文件到暂存区（不会记录删除操作）
 git commit -m "提交说明"  #提交暂存区的文件到本地仓库
 git commit --amend  # 重写上一次的提交信息
+git stash # 挂起暂未提交的修改
+git stash repply
 ```
 
 ## 控制版本

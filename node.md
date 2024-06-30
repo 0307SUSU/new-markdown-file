@@ -237,6 +237,20 @@ promise的实例方法最终都会return一个新的promise
 
 #### http模块
 
+> http协议请求报文和响应报文
+>
+> 请求request
+>
+> 响应response
+
+> 三次握手四次挥手？
+
+> 网络通信协议
+>
+> TCP/IP?协议族
+
+
+
 #### url模块
 
 [腾讯云教程](https://cloud.tencent.com/developer/article/1653911)
@@ -257,7 +271,37 @@ promise的实例方法最终都会return一个新的promise
 
 #### express
 
+> 导入const express = require("express")
+>
+> 创建 const  app= express()
+>
+> 启动   app.listen(3000,()=>{...})
 
+##### 路由
 
+> get()
+>
+> post()
 
+路由模块化
+
+##### 中间件
+
+> app.use()
+
+##### nodemon
+
+> 依赖，使服务器自动重启
+>
+> 全局安装    npm i nodemon -g
+>
+> 局部安装    npm i nodemon  -s
+>
+> 使用     启动服务器时使用命令   nodemon  指定文件
+
+##### 静态资源
+
+> 访问静态资源   express.static("要访问的静态资源文件夹")
+
+##### 模板引擎
 

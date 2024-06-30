@@ -70,9 +70,25 @@ Node中的全局对象`global` (标准名称叫做`globalThis`)
 
 #### fs文件处理模块
 
+writeFile、copyFile、readFile、unlink、appendFile、rename、
+
+readdir、rmdir、stat、mkdir、exists、copyDir
+
+watch、open、read、
+
+"fs-extra"、"compressing"、
+
 #### path路径处理模块
 
-#### http服务器模块
+#### http（网络协议）服务器模块
+
+createServer、
+
+- createServer
+  - on
+  - listen
+
+
 
 ### 自定义模块
 
@@ -80,15 +96,32 @@ Node中的全局对象`global` (标准名称叫做`globalThis`)
 
 # <font color="#006d0e">包</font>
 
-### npm包
+### npm命令
+
+```bash
+# 
+```
+
+
 
 ### Express（基于http模块封装出来的）
+
+### koa
 
 ##### 路由
 
 ##### 中间件
 
+##### 如何解决跨域
+
 # 底层（v8引擎）
 
 
 
+npm、内置模块、自定义模块、第三方模块
+
+fs、path、url、http
+
+express、
+
+process

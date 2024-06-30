@@ -8,7 +8,7 @@
 
 ### 核心概念
 
-`入口entry`、`输出output`、`loader`、`插件plugins`
+`入口entry`、`输出output`、`loader`、`插件plugins`、`模式mode`
 
 ### 基本使用
 
@@ -47,6 +47,8 @@ module.exports = {
 
 #### 开发模式下webpack配置文件处理
 
+##### entry
+
 ```js
 module.exports = {
   // 单个入口语法
@@ -62,18 +64,23 @@ module.exports = {
 // entry 指定了打包的文件范围，并且既可以只指定一个打包范围，也可以指定多个不同的打包范围，区别是语法上有些不同
 ```
 
+##### output
+
 ```js
 const path = require('path');
 module.exports = {
     entry: './src/main.js',
     output:{
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js', // 命名随意
+        path: path.resolve(__dirname, 'dist'), // 指定的打包目录，必须绝对路径
+        filename: 'bundle.js', // 打包生成的文件名，命名随意
+        clean:true,  // 是否自动清除打包目录
     },
 };
 
 // output 指定了打包好的文件名和输出的位置，path的值代表输出位置，filename的值代表输出后的文件名
 ```
+
+##### loaders
 
 ```js
 const path = require('path');
@@ -258,3 +265,8 @@ module.exports = {
 sourceMap(源代码映射)
 
 #### 提升打包构建速度
+
+
+
+module、 loader、plugin、
+

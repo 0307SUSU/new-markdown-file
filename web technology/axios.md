@@ -1,27 +1,9 @@
 <div align='center'><font size='70'; face="宋体">Axios</font></div>
 
-<font color="red">axios中的qs</font>
-
 > axios是一个专注于网络请求的库
-
-![image-20220415163743488](C:\Users\25369\AppData\Roaming\Typora\typora-user-images\image-20220415163743488.png)
-
-![image-20220417201442710](C:\Users\25369\AppData\Roaming\Typora\typora-user-images\image-20220417201442710.png)
 
 1. 调用axios方法，得到的返回值是 Promise对象
 2. axios请求的接口返回值外层会套上一层壳
-
-##### axios的基本使用
-
-![image-20220417204647062](C:\Users\25369\AppData\Roaming\Typora\typora-user-images\image-20220417204647062.png)
-
-- 直接发起GET请求
-
-![image-20220417205416762](C:\Users\25369\AppData\Roaming\Typora\typora-user-images\image-20220417205416762.png)
-
-- 直接发起post请求
-
-![image-20220417205614074](C:\Users\25369\AppData\Roaming\Typora\typora-user-images\image-20220417205614074.png)
 
 ## vue中axios的使用
 
